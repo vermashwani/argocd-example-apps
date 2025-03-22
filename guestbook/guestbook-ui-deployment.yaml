@@ -18,3 +18,9 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
+        image: gcr.io/google-samples/hello-app:2.0
+        env:
+        - name: APP_NAME
+          value: "Hello from the environment app name: GUESTBOOK-UI"
+        - name: ENV_NAME
+          value: "This is demo app"
